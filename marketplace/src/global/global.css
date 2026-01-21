@@ -92,10 +92,10 @@ body {
 /* Input styles */
 .input {
     width: 100%;
-    padding: 0.75rem;
+    padding: 1rem;
     border: 2px solid #ecf0f1;
     border-radius: 6px;
-    font-size: 1rem;
+    font-size: 1.5rem;
     transition: border-color 0.3s, box-shadow 0.3s, background-color 0.3s;
     background-color: #fff;
     color: #333;
@@ -322,6 +322,7 @@ a:hover {
     padding: 0.5rem;
     border-radius: 4px;
     transition: background-color 0.3s, transform 0.2s;
+    background-color: #0fadd4;
 }
 
 .button:hover {
