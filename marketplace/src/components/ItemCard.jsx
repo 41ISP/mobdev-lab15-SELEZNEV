@@ -24,16 +24,13 @@ const ItemCard = ({ id, title, description, price, userId, username, status, ima
             <div className="item-content">{title}</div>
             {imageUrl && (
                 <div className="item-image">
-                    <picture>
-                        <img src={imageUrl} alt={title} />
-                        <source srcset="https://img.icons8.com/?size=50&id=53386&format=png" type="image/png" />
-                    </picture>
+                    <img src={imageUrl} alt={title} onerror="this.onerror=null; this.src='https://img.icons8.com/?size=50&id=53386&format=png'"></img>
                 </div>
             )}
             <div className="item-meta">
-                <span className="item-author">{username}</span>
+                <span className="item-author item-user">{username}</span>
                 <span className="item-author">{description}</span>
-                <span className="item-author">{price}</span>
+                <span className="item-author item-price">{price}</span>
                 <span className="item-time">{createdAt}</span>
             </div>
             {loggedUserId && userId && loggedUserId === userId && (

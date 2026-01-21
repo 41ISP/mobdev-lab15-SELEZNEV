@@ -38,4 +38,8 @@ export const router = createBrowserRouter([
             },
         ],
     },
-],)
+],
+{
+    basename: '/mobdev-lab15-SELEZNEV'
+}
+)

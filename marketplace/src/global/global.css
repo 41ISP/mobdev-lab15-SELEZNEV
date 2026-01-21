@@ -26,10 +26,11 @@ body {
     display: flex;
     justify-content: space-between;
     align-items: center;
-}
-
-.navbar{
-    width: 100%;
+    width: 100vw;
+    position:fixed;
+    top:0px;
+    left: 0px;
+    z-index: 9999;
 }
 
 .navbar-brand {
@@ -233,6 +234,9 @@ a:hover {
 
 /* Item card styles */
 .item-card {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
     background: #fff;
     border-radius: 12px;
     padding: 1.5rem;
@@ -290,8 +294,12 @@ a:hover {
     font-size: 0.9rem;
 }
 
-.item-meta:first-child{
+.item-user{
     font-size: 1.6rem;
+}
+
+.item-price{
+    color: green !important; 
 }
 
 .item-author {
