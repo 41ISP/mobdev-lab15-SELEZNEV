@@ -24,7 +24,10 @@ const ItemCard = ({ id, title, description, price, userId, username, status, ima
             <div className="item-content">{title}</div>
             {imageUrl && (
                 <div className="item-image">
-                    <img src={imageUrl} alt={title} />
+                    <picture>
+                        <img src={imageUrl} alt={title} />
+                        <source srcset="https://img.icons8.com/?size=50&id=53386&format=png" type="image/png" />
+                    </picture>
                 </div>
             )}
             <div className="item-meta">
